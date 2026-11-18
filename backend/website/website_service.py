@@ -42,5 +42,3 @@ class WebsiteService:
             self.db.rollback()
             raise
         return {"message": "deleted"}
-
-        

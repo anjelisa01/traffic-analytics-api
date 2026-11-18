@@ -1,4 +1,3 @@
-
 from fastapi import Query
 
 def pagination(

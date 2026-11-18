@@ -10,13 +10,11 @@ api_router.include_router(
     tags=["websites"]
 )
 
-
 api_router.include_router(
     event_endpoints.router,
     prefix="/events",
     tags=["events"]
 )
-
 
 api_router.include_router(
     stats_endpoints.router,

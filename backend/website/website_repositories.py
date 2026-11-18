@@ -1,7 +1,5 @@
-
 from sqlalchemy.orm import Session
 from sqlalchemy import select
-
 
 from models import Website
 
