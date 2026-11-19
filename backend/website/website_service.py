@@ -37,7 +37,7 @@ class WebsiteService:
     def delete(self,website_id: int):
         ws = self.repository.get_by_id(website_id)
         try:
-            self.repository.delete(ws)
+            self.repository.delete(ws) #this delete everything including the website all events, need to change so ts soft delete
         except Exception:
             self.db.rollback()
             raise

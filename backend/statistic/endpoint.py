@@ -62,6 +62,7 @@ def get_data(    #get data with all filters
             Event.timestamp >= timestamp,
             Event.timestamp < timestamp + timedelta(days=1)
         )
+
     if page is not None:
         stmt=stmt.where(Event.page==page)
 
